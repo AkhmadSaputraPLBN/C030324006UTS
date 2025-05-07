@@ -1,7 +1,13 @@
 #include <iostream>
+#include <thread>
 #include <conio.h>
 using namespace std;
 
+void info(){
+  system("cls");
+    cout << "HIDUP JOKOWI" << endl;
+  getch();
+}
 
 void dMenu(){
 system("cls");
@@ -9,7 +15,7 @@ cout<<"Aplikasi Tampilan Menu"<<"\n";
 cout<<"1. Menu Pertama"<<"\n";            
 cout<<"2. Menu Kedua"<<"\n";            
 cout<<"3. Menu Ketiga"<<"\n";           
-cout<<"4. Menu Keempat"<<"\n";            
+cout<<"4. Informasi"<<"\n";            
 cout<<"5. Exit"<<"\n";           
 cout<<"Masukan angka :";        
 
@@ -43,7 +49,7 @@ do
     /* code */
     break;  
    case '4':
-    mPertama("ke- empat");
+    info ();
     /* code */
     break;  
   case '5':
